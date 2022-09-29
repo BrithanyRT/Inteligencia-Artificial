@@ -1,0 +1,151 @@
+/* Optional: Makes the sample page fill the window. */
+@import url('https://fonts.googleapis.com/css2?family=Cambay&family=Lora:ital,wght@1,600&family=Merriweather:ital,wght@0,300;1,700&family=Montserrat:wght@200;400&family=Poppins&display=swap');*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;font-family: 'Cambay', sans-serif;
+  font-family: 'Lora', serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#container {
+  height: 100%;
+  display: flex;
+}
+
+#sidebar {
+  flex-basis: 15rem;
+  flex-grow: 1;
+  padding: 1rem;
+  max-width: 30rem;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  border-left: 10px solid #fff;
+  color: rgb(3, 3, 3);
+}
+
+#map {
+  flex-basis: 0;
+  flex-grow: 4;
+  height: 100%;
+}
+
+#directions-panel {
+  margin-top: 10px;
+}
+
+.contentSidebar{
+  background-color: #8AB4F8;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.titulo{
+  text-align: center;
+  font-size: 2.5rem;
+  color: #280F62;
+}
+.subtitulo{
+  font-size: .93rem;
+  border-left: 4px solid #04276d;
+  padding-left: .5rem;
+}
+.numeroRuta{
+  font-size: 1rem;
+  padding: 0 0 .5rem;
+}
+.contentWaypoints{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding-left: 2rem;
+}
+.contentWaypoints label{
+  margin-left: .5rem;
+}
+
+.agencia-inicio , .agencia-destino{
+  display: flex;;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+.ruta{
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: .5rem;
+  border-radius: 0 10px 10px 0;
+  border-left: 8px solid #F79E1B;
+  box-shadow: -1px 0 6px rgba(14, 55, 63, 0.15);
+}
+
+
+.distancia{
+  color: red;
+}
+p span{
+  font-weight: 700;
+}
+
+input[type="submit"]{
+  cursor: pointer;
+  background: #fff; 
+  display: inline;
+  padding: .5rem 2.5rem;
+  border-radius: 10px;
+  border: 2px solid #04276d;
+  transition: all .3s;
+  font-weight: 600;
+  
+}
+
+input[type="submit"]:hover{
+  background-color: #04276d;
+  color: #fff;
+}
+
+.button{
+  margin: .8rem 0; 
+  text-align: center;
+}
+.select{
+  padding: .3rem 0;
+  border-radius: 10px;
+  border: 1px solid;
+  font-size: .85rem;
+}
+
+.algoritmo{
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: .8rem;
+  border-radius: 0 0px 10px 10px;
+  border-top: 8px solid #F79E1B;
+  box-shadow: -1px 0 6px rgba(14, 55, 63, 0.15);
+}
+
+.titulo-algoritmo{
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mr{
+  padding-right: 2rem;
+}
+
+
+.select-multiple{
+  height: 100%;
+  width: 100%;
+  padding: .5rem;
+}
+
